@@ -1,24 +1,117 @@
-<h1 align="center">✨ Next.js Full Course - Build a Social App ✨</h1>
-
 ![Demo App](/public/screenshot-for-readme.png)
 
-[Watch Full Tutorial on Youtube](https://youtu.be/vUYopHWOURg)
+Lynq — Next-Gen Social Media Platform
 
-Highlights:
+A modern, high-performance social media application built with Next.js App Router, Postgres, Prisma, and Clerk.
+Lynq focuses on speed, clean UI, smart caching, seamless authentication, and a developer-friendly architecture that scales.
 
-- 🚀 Tech stack: Next.js App Router, Postgres, Prisma, Clerk & TypeScript
-- 💻 Server Components, Layouts, Route Handlers, Server Actions
-- 🔥 loading.tsx, error.tsx, not-found.tsx
-- 📡 API Integration using Route Handlers
-- 🔄 Data Fetching, Caching & Revalidation
-- 🎭 Client & Server Components
-- 🛣️ Dynamic & Static Routes
-- 🎨 Styling with Tailwind & Shadcn
-- 🔒 Authentication & Authorization
-- 📤 File Uploads with UploadThing
-- 🗃️ Database Integration with Prisma
-- 🚀 Server Actions & Forms
-- ⚡ Optimistic Updates
+This project demonstrates production-level patterns including server components, server actions, optimistic updates, and secure file handling.
+
+
+🚀 Tech Stack
+
+Next.js 15+ (App Router)
+
+React Server Components
+
+TypeScript
+
+PostgreSQL
+
+Prisma ORM
+
+Clerk Authentication
+
+UploadThing for File Uploads
+
+Tailwind CSS + Shadcn UI
+
+Vercel Deployment
+
+
+✨ Core Features
+
+🔐 Authentication & Authorization
+
+Secure login and signup via Clerk
+
+Protect sensitive routes using middleware
+
+Session-based access for feeds, profiles, and interactions
+
+
+📱 Social Features
+
+Create and share posts
+
+Upload images (UploadThing)
+
+Comment & interact with posts
+
+Follow users & manage connections
+
+Personalized feeds
+
+
+⚡ Performance & UX
+
+Optimistic UI updates for instant feedback
+
+Server Actions for safe, server-only mutations
+
+Smart caching with revalidation strategies
+
+Shallow, partial, & dynamic rendering
+
+
+⚙️ Developer Experience
+
+Organised file structure using App Router conventions
+
+Modular components (Client + Server)
+
+Reusable loading and error boundaries (loading.tsx, error.tsx, not-found.tsx)
+
+API routes built with Route Handlers
+
+Full TypeScript safety across backend & frontend
+
+
+📁 Project Structure
+
+src/
+ ├─ app/
+ │   ├─ (public)/
+ │   ├─ (auth)/
+ │   ├─ api/
+ │   │   └─ posts/
+ │   │       └─ route.ts
+ │   ├─ dashboard/
+ │   ├─ layout.tsx
+ │   ├─ page.tsx
+ │   ├─ loading.tsx
+ │   ├─ error.tsx
+ │   └─ not-found.tsx
+ ├─ components/
+ │   ├─ ui/
+ │   └─ shared/
+ ├─ lib/
+ ├─ server/
+ │   ├─ actions/
+ │   └─ db.ts
+ └─ styles/
+
+
+🛠️ Getting Started
+
+1. Clone the project
+
+git clone https://github.com/your-username/lynq.git
+cd lynq
+
+
+2. Install dependencies
+npm install
 
 ### Setup .env file
 
@@ -34,3 +127,8 @@ UPLOADTHING_TOKEN=
 ```shell
 npm run dev
 ```
+
+🧑‍💻 Author
+
+Robert Antwi
+Software Engineer
