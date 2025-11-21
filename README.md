@@ -1,14 +1,15 @@
 ![Demo App](/public/screenshot-for-readme.png)
 
-Lynq — Next-Gen Social Media Platform
+# Lynq — Next-Gen Social Media Platform
 
 A modern, high-performance social media application built with Next.js App Router, Postgres, Prisma, and Clerk.
 Lynq focuses on speed, clean UI, smart caching, seamless authentication, and a developer-friendly architecture that scales.
 
 This project demonstrates production-level patterns including server components, server actions, optimistic updates, and secure file handling.
 
+---
 
-🚀 Tech Stack
+## 🚀 Tech Stack
 
 Next.js 15+ (App Router)
 
@@ -29,9 +30,9 @@ Tailwind CSS + Shadcn UI
 Vercel Deployment
 
 
-✨ Core Features
+## ✨ Core Features
 
-🔐 Authentication & Authorization
+### 🔐 Authentication & Authorization
 
 Secure login and signup via Clerk
 
@@ -40,7 +41,7 @@ Protect sensitive routes using middleware
 Session-based access for feeds, profiles, and interactions
 
 
-📱 Social Features
+### 📱 Social Features
 
 Create and share posts
 
@@ -53,7 +54,7 @@ Follow users & manage connections
 Personalized feeds
 
 
-⚡ Performance & UX
+### ⚡ Performance & UX
 
 Optimistic UI updates for instant feedback
 
@@ -64,7 +65,7 @@ Smart caching with revalidation strategies
 Shallow, partial, & dynamic rendering
 
 
-⚙️ Developer Experience
+### ⚙️ Developer Experience
 
 Organised file structure using App Router conventions
 
@@ -102,18 +103,27 @@ src/
  └─ styles/
 
 
-🛠️ Getting Started
+## 📦 Getting Started
 
-1. Clone the project
+### Prerequisites
+- Node.js >= 20
+- npm or yarn
 
-git clone https://github.com/your-username/lynq.git
-cd lynq
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/<your-username>/lynq.git
 
+# Navigate to the project folder
+cd tripcontrol
 
-2. Install dependencies
+# Install dependencies
 npm install
+# or
+yarn install
 
-### Setup .env file
+
+# Setup .env file
 
 ```js
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
@@ -122,13 +132,30 @@ DATABASE_URL=
 UPLOADTHING_TOKEN=
 ```
 
-### Run the app
-
-```shell
+# Run the app
 npm run dev
-```
+# or
+yarn dev
 
-🧑‍💻 Author
+Visit http://localhost:3000
 
-Robert Antwi
-Software Engineer
+
+📝 Contributing
+
+Contributions are welcome!
+
+Fork the repository
+
+Create a new branch (git checkout -b feature/your-feature)
+
+Make your changes
+
+Submit a pull request
+
+Please ensure code is clean, modular, and follows the existing structure.
+
+
+👨‍💻 Author
+
+Robert Antwi – Software engineer
+GitHub LinkedIn
