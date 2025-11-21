@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Lynq logo">
+  <defs>
+    <style>
+      .ln-fill { fill: #000; } /* navy */
+      .ln-text { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; font-weight: 600; font-size: 160px; fill: #000; letter-spacing: -2px; }
+    </style>
+  </defs>
+
+  <!-- Rounded square speech bubble -->
+  <!-- main rounded rect -->
+  <rect x="40" y="70" rx="48" ry="48" width="260" height="260" class="ln-fill" />
+  <!-- tail cutout: we'll subtract by drawing white tail-shaped area on top (so keep bg transparent: use mask instead) -->
+  <mask id="tailMask">
+    <rect x="0" y="0" width="1200" height="400" fill="white"/>
+    <!-- tail shape to subtract (black means hide) -->
+    <path d="M240 280 L290 320 L260 260 L240 280 Z" fill="black"/>
+  </mask>
+
+  <!-- draw rounded rect inside mask so tail appears cut -->
+  <rect x="40" y="70" rx="48" ry="48" width="260" height="260" fill="#000" mask="url(#tailMask)"/>
+
+  <!-- small notch to make the tail point overlap (a cleaner tail) -->
+  <path d="M256 278 L290 320 L260 260 Z" fill="#000"/>
+
+  <!-- Inner circle (centered inside rounded square) -->
+  <circle cx="170" cy="200" r="56" fill="white"/>
+  <!-- small inner circle to create ring effect (optional: ring) -->
+  <circle cx="170" cy="200" r="28" fill="#000"/>
+
+  <!-- Wordmark -->
+  <text x="360" y="255" class="ln-text">Lynq</text>
+
+  <!-- Optional: improve alignment (visual baseline tweaks) -->
+  <!-- For crisp rendering on small sizes, use shape-rendering -->
+  <rect x="0" y="0" width="0" height="0" style="shape-rendering:crispEdges;"/>
+</svg>
