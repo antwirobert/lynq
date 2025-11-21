@@ -1,5 +1,5 @@
 <a href="https://antwi-lynq.vercel.app" target="_blank">
-    <img src="public/screenshot.png" alt="Project Banner">
+    <img src="public/Screenshot.png" alt="Project Banner">
 </a>
 
 # Lynq — Next-Gen Social Media Platform
