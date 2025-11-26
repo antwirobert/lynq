@@ -178,3 +178,10 @@ Contributions are welcome! Please submit an issue or pull request.
 Robert Antwi Creator of Lynq
 [GitHub](https://github.com/antwirobert/) 
 [LinkedIn](https://www.linkedin.com/in/robert-antwi-a0aab9277/)
+
+<br />
+
+⭐ Support the Project
+
+If this project inspires you, please leave a star on the repo!
+It helps more developers discover it.
