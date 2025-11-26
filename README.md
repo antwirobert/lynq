@@ -2,108 +2,126 @@
     <img src="public/Screenshot.png" alt="Project Banner">
 </a>
 
-# Lynq — Next-Gen Social Media Platform
+# 📱 Lynq — Full-Stack Social Media Application
 
-A modern, high-performance social media application built with Next.js App Router, Postgres, Prisma, and Clerk.
-Lynq focuses on speed, clean UI, smart caching, seamless authentication, and a developer-friendly architecture that scales.
+Lynq is a modern, full-stack social media platform built with **Next.js**, designed to deliver a seamless, fast, and secure social experience. It supports real-time interactions, user-generated content, notifications, authentication, and profile management — all wrapped in a clean, responsive UI.
 
-This project demonstrates production-level patterns including server components, server actions, optimistic updates, and secure file handling.
+This project demonstrates professional-level engineering, including backend APIs, authentication flows, image uploads, database management, UI/UX polish, and production deployment.
 
+---
 
-##🚀 Tech Stack
+## ✨ Features
 
-Next.js 15+ (App Router)
+### 🔐 **Authentication & Security**
+- Sign up / log in using **Google OAuth** or **Email + Password**
+- Email login includes a **six-digit verification code** for enhanced security
+- Fully managed authentication and user sessions via **Clerk**
+- Account management:
+  - Add/remove email addresses  
+  - View connected accounts  
+  - Review active devices  
+  - Delete account  
 
-React Server Components
+---
 
-TypeScript
+### 📝 **Posts & Interactions**
+- Create posts with **image uploads** using UploadThing
+- Like and comment on posts with **instant UI updates**
+- Beautiful, non-intrusive, animated notifications
+- Delete your own posts with a confirmation dialog
+- View:
+  - Post details  
+  - Likes  
+  - Comments  
 
-PostgreSQL
+---
 
-Prisma ORM
+### 👥 **Social Features**
+- Follow and unfollow users
+- Intelligent **random user suggestions** to follow
+- Visit any user profile to see:
+  - Bio & profile info  
+  - Posts  
+  - Likes  
+- Update your own profile details anytime
 
-Clerk Authentication
+---
 
-UploadThing for File Uploads
+### 🔔 **Real-Time Notifications**
+Get immediate notifications when:
+- Someone follows you  
+- Someone likes your post  
+- Someone comments on your post  
+Comments notifications link directly to:
+- The post  
+- The specific comment  
 
-Tailwind CSS + Shadcn UI
+---
 
-Vercel Deployment
+## 🏠 **User Flow Summary**
+1. Start at the homepage  
+2. Sign up or log in (Google or email-based)  
+3. Create posts, upload images, interact with other users  
+4. Follow profiles, explore suggestions, and manage your account  
+5. Receive notifications for social interactions  
+6. Log out securely at any time  
 
-## ✨ Core Features
+---
 
-### 🔐 Authentication & Authorization
+## 🛠️ **Tech Stack**
 
-Secure login and signup via Clerk
+### 🚀 Frameworks & Languages
+- **Next.js (App Router)**
+- **React**
+- **TypeScript**
 
-Protect sensitive routes using middleware
+### 🎨 Styling
+- **TailwindCSS**
+- **Shadcn/UI**
+- Responsive, modern UI components
 
-Session-based access for feeds, profiles, and interactions
+### 🔒 Authentication
+- **Clerk** (OAuth, email verification, device/session management)
 
-### 📱 Social Features
+### 🗂️ Database & ORM
+- **PostgreSQL** (Neon)
+- **Prisma ORM**
 
-Create and share posts
+### 🖼️ File Uploads
+- **UploadThing** for secure image uploads
 
-Upload images (UploadThing)
+### ⚙️ Backend & Architecture
+- **Server Components**
+- **Server Actions**
+- **Route Handlers (API)**
+- **Dynamic & Static Routes**
+- **Optimistic UI updates**
+- **Caching, ISR, and Data Revalidation**
 
-Comment & interact with posts
-
-Follow users & manage connections
-
-Personalized feeds
-
-
-### ⚡ Performance & UX
-
-Optimistic UI updates for instant feedback
-
-Server Actions for safe, server-only mutations
-
-Smart caching with revalidation strategies
-
-Shallow, partial, & dynamic rendering
-
-
-### ⚙️ Developer Experience
-
-Organised file structure using App Router conventions
-
-Modular components (Client + Server)
-
-Reusable loading and error boundaries (loading.tsx, error.tsx, not-found.tsx)
-
-API routes built with Route Handlers
-
-Full TypeScript safety across backend & frontend
-
-<br />
+---
 
 ## 📦 Getting Started
 
-### Prerequisites
-- Node.js >= 20
-- npm or yarn
-
-### Installation
+### 1️⃣ Clone the repository
 ```bash
-# Clone the repository
-git clone https://github.com/<your-username>/lync.git
-# Navigate to the project folder
-cd lync
+git clone https://github.com/antwirobert/lynq.git
+cd lynq
 ```
+
+### 2️⃣ Install dependencies
 ```bash
-# Install dependencies
 npm install
 # or
 yarn install
 ```
+### 3️⃣ Set environment variables
 ```bash
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 DATABASE_URL=
 UPLOADTHING_TOKEN=
 ```
-
+### 4️⃣ Start the development server
 ```bash
 # Run the development server
 npm run dev
@@ -118,7 +136,7 @@ Open http://localhost:3000 in your browser to view the project.
 🌐 Live Demo
 
 Check out the live deployment: 
-[Lynq](https://antwi-lync.vercel.app)
+[Lynq](https://lync-social.vercel.app)
 
 <br />
 
@@ -149,24 +167,14 @@ src/
 
 <br />
 
-📝 Contributing
+🤝 Contributing
 
-Contributions are welcome!
-
-Fork the repository
-
-Create a new branch (git checkout -b feature/your-feature)
-
-Make your changes
-
-Submit a pull request
-
-Please ensure code is clean, modular, and follows the existing structure.
+Contributions are welcome! Please submit an issue or pull request.
 
 <br />
 
-👨‍💻 Author
+🧑‍💻 Author
 
-Robert Antwi – Software engineer
+Robert Antwi Creator of Lynq
 [GitHub](https://github.com/antwirobert/) 
 [LinkedIn](https://www.linkedin.com/in/robert-antwi-a0aab9277/)
